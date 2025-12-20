@@ -124,3 +124,35 @@ footer { padding: 50px 0; text-align: center; border-top: 1px solid #e2e8f0; fon
     .hero h1 { font-size: 2.5rem; }
     .work-item { grid-template-columns: 1fr; gap: 1rem; }
 }
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg: #0f172a;        /* Dark Slate */
+    --card-bg: #1e293b;   /* Lighter Slate for cards */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border: #334155;
+}
+
+/* Specific adjustments for Dark Mode visibility */
+body.dark-mode nav {
+    background: #1e293b;
+}
+
+body.dark-mode .hero {
+    background: #0f172a;
+}
+
+body.dark-mode .card {
+    background: #1e293b;
+    border: 1px solid var(--border);
+}
+
+body.dark-mode .btn-white {
+    background: #334155;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark-mode footer {
+    background: #0f172a;
+}

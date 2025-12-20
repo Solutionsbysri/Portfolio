@@ -3,116 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPortfolio | Creative Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Srikanth Dukka | AI-Empowered Product Leader</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">PORTFOLIO<span>.</span></div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#work">Work</a>
-            <a href="#contact" class="nav-btn">Let's Talk</a>
-        </div>
+    <nav>
+        <div class="logo">SD</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <span class="badge">Available for hire</span>
-            <h1>Crafting digital <br><span class="gradient-text">experiences</span> that matter.</h1>
-            <p>I help brands grow by creating high-performance, beautiful websites that solve real problems.</p>
-            <div class="hero-btns">
-                <a href="#work" class="btn-main">Explore Work</a>
-                <a href="#" class="btn-outline">My Process</a>
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Srikanth Dukka</h1>
+            <h2>Certified SAFe® AI-Empowered Product Owner & Full-Stack Architect</h2>
+            <p>7+ years of building scalable solutions in Aviation, Payroll, and Finance.</p>
+            <div class="cta-buttons">
+                <a href="#experience" class="btn-primary">View My Work</a>
+                <a href="mailto:dukkasrikanth23@gmail.com" class="btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h3>Summary</h3>
+        <p>I bridge the gap between complex technical architecture and strategic business value. Expert in Agile methodologies with a deep background in J2EE, React, and Cloud infrastructure.</p>
+    </section>
+
+    <section id="experience">
+        <h3>Professional Journey</h3>
+        
+        <div class="job-card">
+            <div class="job-header">
+                <h4>Senior Software Consultant @ Paychex INC</h4>
+                <span>April 2021 - Present</span>
+            </div>
+            <p class="job-desc">Leading the modernization of payroll systems through AI-driven product management and microservices architecture.</p>
+            <ul>
+                <li>Authored detailed user stories for a team of 8 using JIRA.</li>
+                <li>Redesigned critical UI using Figma to address customer pain points.</li>
+                <li>Automated CI/CD pipelines via Jenkins, Docker, and OpenShift.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h4>Software Engineer @ Valtech</h4>
+                <span>June 2019 - Feb 2021</span>
+            </div>
+            <p class="job-desc">Modernized aircraft maintenance systems (STC) from Java 6 to Java 8/Spring.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Technical Arsenal</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Agile & Management</h4>
+                <p>SAFe, Scrum, JIRA, Rally, Roadmapping (Miro), User Story Mapping</p>
+            </div>
+            <div class="skill-category">
+                <h4>Full-Stack Tech</h4>
+                <p>Java, Spring Boot, ReactJS, AngularJS, Node.js</p>
+            </div>
+            <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <p>AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins, OpenShift</p>
             </div>
         </div>
     </section>
 
-<section id="work" class="grid-section">
-    <div class="section-header">
-        <h2>Professional Experience</h2>
-        <div class="line"></div>
-    </div>
-
-    <div class="grid-container">
-        <div class="glass-card">
-            <div class="card-content">
-                <div class="job-header">
-                    <span class="badge">Current</span>
-                    <h3>Senior Software Consultant</h3>
-                    <p class="company">Paychex INC | April 2021 - Present</p>
-                </div>
-                <ul class="work-list">
-                    <li><strong>Product Leadership:</strong> Authored user stories for a team of 8 and partnered with stakeholders for UI redesigns via Figma.</li>
-                    <li><strong>Architecture:</strong> Modernized legacy payroll systems with RESTful APIs, Microservices, and Kong Security.</li>
-                    <li><strong>DevOps & Data:</strong> Automated CI/CD pipelines (Jenkins/Docker/OpenShift) and managed Kafka topics.</li>
-                </ul>
-            </div>
+    <footer id="contact">
+        <h3>Get In Touch</h3>
+        <p>Email: dukkasrikanth23@gmail.com | Phone: 618-803-2919</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/srikanth-dukka">LinkedIn</a>
+            <a href="#">GitHub</a>
         </div>
-
-        <div class="glass-card">
-            <div class="card-content">
-                <div class="job-header">
-                    <h3>Software Engineer</h3>
-                    <p class="company">Valtech (RiverPoint) | June 2019 - Feb 2021</p>
-                </div>
-                <ul class="work-list">
-                    <li><strong>Aviation Systems:</strong> Managed STC applications tracking critical aircraft component cycles.</li>
-                    <li><strong>Modernization:</strong> Migrated legacy Struts/Hibernate to Spring Architecture (Java 8).</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-    <section id="skills" style="padding: 80px 10%; position: relative; z-index: 5;">
-    <div style="text-align: center; margin-bottom: 50px;">
-        <h2 style="color: #1e293b; font-size: 2.5rem;">Technical Expertise</h2>
-        <div style="width: 50px; height: 4px; background: #2563eb; margin: 10px auto;"></div>
-    </div>
-
-    <div class="skills-grid">
-        <div class="skill-group">
-            <h3>Agile & Product</h3>
-            <div class="tag-container">
-                <span class="skill-tag">SAFe®</span>
-                <span class="skill-tag">Scrum</span>
-                <span class="skill-tag">Jira/Rally</span>
-                <span class="skill-tag">User Story Mapping</span>
-                <span class="skill-tag">Backlog Refinement</span>
-            </div>
-        </div>
-
-        <div class="skill-group">
-            <h3>Backend & Cloud</h3>
-            <div class="tag-container">
-                <span class="skill-tag">Java/J2EE</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">Microservices</span>
-                <span class="skill-tag">AWS (EC2/S3)</span>
-                <span class="skill-tag">Docker/K8s</span>
-            </div>
-        </div>
-
-        <div class="skill-group">
-            <h3>Frontend & UX</h3>
-            <div class="tag-container">
-                <span class="skill-tag">ReactJS</span>
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">CSS3/HTML5</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <footer>
-        <p>© 2025 Created with ❤️ by Your Name</p>
     </footer>
-</body>
-</html>
 </body>
 </html>

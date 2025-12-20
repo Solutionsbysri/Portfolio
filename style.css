@@ -197,3 +197,7 @@ footer {
     color: var(--text-dim);
     font-size: 0.9rem;
 }
+section {
+    /* Adjust the 80px to match the height of your navbar */
+    scroll-margin-top: 80px; 
+}

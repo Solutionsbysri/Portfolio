@@ -96,13 +96,33 @@
             border-radius: 12px; 
             transition: var(--transition);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card:hover { transform: translateY(-5px); border-color: var(--accent-blue); }
 
         .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
         .company { color: var(--accent-blue); font-weight: 700; font-size: 0.95rem; display: block; }
         .date { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; display: block; }
-        .card p { font-size: 0.95rem; color: var(--text-secondary); }
+        .card p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+        /* Know More Button Style */
+        .btn-know-more {
+            align-self: flex-start;
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid var(--accent-blue);
+            padding: 6px 14px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .btn-know-more:hover {
+            background: var(--accent-blue);
+            color: #fff;
+        }
 
         .skill-list { list-style: none; margin-top: 1rem; }
         .skill-list li { font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
@@ -138,7 +158,7 @@
             <h1>Bridging the gap between <br><span>Code and Strategy.</span></h1>
             <p>Senior Software Consultant with a 7+ year track record. Specialist in modernizing enterprise architecture and leading Agile delivery teams.</p>
             <div class="btn-group">
-                <a href="mailto:sridu457@gmail.com" class="btn-primary">Contact Me</a>
+                <a href="mailto:dukkasrikanth23@gmail.com" class="btn-primary">Contact Me</a>
                 <a href="resume.pdf" class="btn-outline" download="Srikanth_Dukka_Resume.pdf">Download Resume</a>
             </div>
         </div>
@@ -149,10 +169,13 @@
         
         <div class="grid">
             <div class="card" data-aos="fade-up">
-                <span class="company">Paychex INC</span>
-                <h3>Senior Software and Product Consultant</h3>
-                <span class="date">April 2021 — Present</span>
-                <p>Driving digital transformation of payroll systems. Translating epics into actionable stories for 8 developers. Modernized legacy security to Kong Services and redesigned critical UIs using Figma to optimize user workflows.</p>
+                <div>
+                    <span class="company">Paychex INC</span>
+                    <h3>Senior Software Consultant</h3>
+                    <span class="date">April 2021 — Present</span>
+                    <p>Driving digital transformation of payroll systems. Translating epics into actionable stories for 8 developers. Modernized legacy security to Kong Services and redesigned critical UIs using Figma to optimize user workflows.</p>
+                </div>
+                <a href="paychex.html" class="btn-know-more" target="_blank">Know More</a>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Highlights</h3>
@@ -167,10 +190,13 @@
 
         <div class="grid">
             <div class="card" data-aos="fade-up">
-                <span class="company">Valtech</span>
-                <h3>Software Engineer</h3>
-                <span class="date">June 2019 — Feb 2021</span>
-                <p>Architected modernization strategies for aircraft maintenance systems. Migrated core platforms from Java 6 to Spring 8 and introduced TDD practices to ensure 90%+ code coverage on critical modules.</p>
+                <div>
+                    <span class="company">Valtech</span>
+                    <h3>Software Engineer</h3>
+                    <span class="date">June 2019 — Feb 2021</span>
+                    <p>Architected modernization strategies for aircraft maintenance systems. Migrated core platforms from Java 6 to Spring 8 and introduced TDD practices to ensure 90%+ code coverage on critical modules.</p>
+                </div>
+                <a href="valtech.html" class="btn-know-more" target="_blank">Know More</a>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Highlights</h3>
@@ -185,10 +211,13 @@
 
         <div class="grid">
             <div class="card" data-aos="fade-up">
-                <span class="company">Edward Jones (Synapsis Inc)</span>
-                <h3>Java Developer</h3>
-                <span class="date">February 2019 — June 2019</span>
-                <p>Assisted in the redesign of the Online Access Architecture (OAAR). Architected a microservices ecosystem using Spring Boot and Kubernetes, ensuring scalability and interoperability with legacy EJB components.</p>
+                <div>
+                    <span class="company">Edward Jones (Synapsis Inc)</span>
+                    <h3>Java Developer</h3>
+                    <span class="date">February 2019 — June 2019</span>
+                    <p>Assisted in the redesign of the Online Access Architecture (OAAR). Architected a microservices ecosystem using Spring Boot and Kubernetes, ensuring scalability and interoperability with legacy EJB components.</p>
+                </div>
+                <a href="edwardjones.html" class="btn-know-more" target="_blank">Know More</a>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Highlights</h3>
@@ -203,10 +232,13 @@
 
         <div class="grid">
             <div class="card" data-aos="fade-up">
-                <span class="company">Synapsis Inc</span>
-                <h3>Java Developer</h3>
-                <span class="date">October 2018 — January 2019</span>
-                <p>Engineered full-stack Java EE applications using MVC (Struts/Hibernate). Optimized data access in Oracle databases using PL/SQL stored procedures and triggers. Automated builds via Maven for Apache Tomcat deployment.</p>
+                <div>
+                    <span class="company">Synapsis Inc</span>
+                    <h3>Java Developer</h3>
+                    <span class="date">October 2018 — January 2019</span>
+                    <p>Engineered full-stack Java EE applications using MVC (Struts/Hibernate). Optimized data access in Oracle databases using PL/SQL stored procedures and triggers. Automated builds via Maven for Apache Tomcat deployment.</p>
+                </div>
+                <a href="synapsis.html" class="btn-know-more" target="_blank">Know More</a>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Highlights</h3>

@@ -17,7 +17,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             let startTime = null;
 
             // Adjust this number for speed: higher = slower
-            const duration = 1500; 
+            const duration = 2500; 
 
             function animation(currentTime) {
                 if (startTime === null) startTime = currentTime;

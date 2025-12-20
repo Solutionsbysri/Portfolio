@@ -15,10 +15,22 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: var(--bg);
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden;
+    margin: 0;
+
+    /* Global Background Image */
+    background: linear-gradient(
+        to bottom, 
+        rgba(15, 23, 42, 0.85), /* Adjust opacity (0.85) to make image more/less visible */
+        rgba(15, 23, 42, 0.95)
+    ), 
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps image static while content scrolls */
+    background-repeat: no-repeat;
 }
 
 /* Navbar */
@@ -63,31 +75,11 @@ body {
 /* Hero Section with Background Image */
 /* Professional Parallax Hero */
 .hero {
-    position: relative;
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0 10%;
-    color: white;
-
-    /* The Parallax Magic */
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(15, 23, 42, 0.7), 
-        rgba(15, 23, 42, 0.9)
-    ), 
-    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');
-    
-    background-attachment: fixed; /* This keeps the image in place while scrolling */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    /* Ensures smooth rendering on modern browsers */
-    will-change: transform;
+    background: transparent; /* Make sure this is transparent */
 }
 
 /* Optional: Subtle fade-in animation for the text */

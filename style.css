@@ -165,24 +165,42 @@ body {
 .section-header { text-align: center; margin-bottom: 50px; }
 .line { width: 50px; height: 4px; background: var(--accent); margin: 10px auto; border-radius: 2px; }
 
+/* Vertical Stack Layout */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-direction: column; /* This stacks them vertically */
+    gap: 60px;              /* More space between vertical cards */
+    max-width: 800px;       /* Keeps the cards from getting too wide */
+    margin: 0 auto;         /* Centers the stack on the page */
 }
 
 .glass-card {
     background: var(--card-bg);
     border: 1px solid rgba(255,255,255,0.05);
-    padding: 40px;
+    padding: 0;             /* Remove padding to let image flush to edges */
     border-radius: 24px;
+    overflow: hidden;       /* Clips the image to the border radius */
     transition: 0.4s;
+    text-align: left;       /* Left-aligned text looks better in vertical stacks */
+}
+
+/* Add an image area to the top of the card */
+.card-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.card-content {
+    padding: 40px;
 }
 
 .glass-card:hover {
-    background: rgba(255,255,255,0.06);
-    transform: translateY(-10px);
-    border-color: rgba(56, 189, 248, 0.3);
+    transform: scale(1.02); /* Subtle grow effect instead of lifting */
+    border-color: rgba(56, 189, 248, 0.4);
+    background: rgba(255,255,255,0.07);
 }
 
 .icon { font-size: 2rem; margin-bottom: 20px; }

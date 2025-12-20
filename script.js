@@ -57,3 +57,9 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => {
     observer.observe(el);
 });
+document.addEventListener('mousemove', (e) => {
+    const moveX = (e.clientX * -0.05) / 8;
+    const moveY = (e.clientY * -0.05) / 8;
+    
+    document.body.style.backgroundPosition = `calc(50% + ${moveX}px) calc(50% + ${moveY}px)`;
+});

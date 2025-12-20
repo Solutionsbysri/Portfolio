@@ -39,3 +39,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+const observerOptions = {
+    threshold: 0.15 // Trigger when 15% of the card is visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Optional: Stop observing after it reveals once
+            // observer.unobserve(entry.target); 
+        }
+    });
+}, observerOptions);
+
+// Target all elements with the .reveal class
+document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+});

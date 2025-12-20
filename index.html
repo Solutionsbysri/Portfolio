@@ -3,88 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikanth Dukka | AI-Empowered Product Leader</title>
+    <title>Srikanth Dukka | Product Leader & Architect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <nav>
-        <div class="logo">SD</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">SRIKANTH <strong>DUKKA</strong></div>
+            <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="mailto:dukkasrikanth23@gmail.com" class="nav-cta">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="hero">
-        <div class="hero-content">
-            <h1>Srikanth Dukka</h1>
-            <h2>Certified SAFe® AI-Empowered Product Owner & Full-Stack Architect</h2>
-            <p>7+ years of building scalable solutions in Aviation, Payroll, and Finance.</p>
-            <div class="cta-buttons">
-                <a href="#experience" class="btn-primary">View My Work</a>
-                <a href="mailto:dukkasrikanth23@gmail.com" class="btn-secondary">Let's Talk</a>
+    <header class="hero">
+        <div class="container">
+            <span class="badge">Certified SAFe® AI-Empowered PO/PM</span>
+            <h1>Bridging the gap between <span>Code</span> and <span>Strategy</span>.</h1>
+            <p>Senior Software Consultant with 7+ years of experience delivering scalable solutions in Aviation, Payroll, and Finance. Specialist in modernizing legacy systems and Agile leadership.</p>
+            <div class="hero-btns">
+                <a href="#experience" class="btn-solid">View Portfolio</a>
+                <a href="https://linkedin.com/in/srikanth-dukka" target="_blank" class="btn-outline">LinkedIn Profile</a>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <h3>Summary</h3>
-        <p>I bridge the gap between complex technical architecture and strategic business value. Expert in Agile methodologies with a deep background in J2EE, React, and Cloud infrastructure.</p>
-    </section>
-
-    <section id="experience">
-        <h3>Professional Journey</h3>
+    <section id="experience" class="container">
+        <h2 class="section-title">Professional Experience</h2>
         
-        <div class="job-card">
-            <div class="job-header">
-                <h4>Senior Software Consultant @ Paychex INC</h4>
-                <span>April 2021 - Present</span>
+        <div class="timeline">
+            <div class="work-item">
+                <div class="work-meta">
+                    <h3>Senior Software Consultant</h3>
+                    <span class="company">Paychex INC</span>
+                    <span class="date">April 2021 — Present</span>
+                </div>
+                <div class="work-content">
+                    <p>Leading the digital transformation of payroll systems through microservices and user-centric design.</p>
+                    <ul>
+                        <li>Redesigned critical UIs using <strong>Figma</strong> to resolve major user pain points.</li>
+                        <li>Automated CI/CD pipelines using <strong>Docker & OpenShift</strong>, increasing deployment frequency.</li>
+                        <li>Bridged the gap between Product Leadership and Dev teams by translating Epics into actionable stories.</li>
+                    </ul>
+                </div>
             </div>
-            <p class="job-desc">Leading the modernization of payroll systems through AI-driven product management and microservices architecture.</p>
-            <ul>
-                <li>Authored detailed user stories for a team of 8 using JIRA.</li>
-                <li>Redesigned critical UI using Figma to address customer pain points.</li>
-                <li>Automated CI/CD pipelines via Jenkins, Docker, and OpenShift.</li>
-            </ul>
-        </div>
 
-        <div class="job-card">
-            <div class="job-header">
-                <h4>Software Engineer @ Valtech</h4>
-                <span>June 2019 - Feb 2021</span>
-            </div>
-            <p class="job-desc">Modernized aircraft maintenance systems (STC) from Java 6 to Java 8/Spring.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h3>Technical Arsenal</h3>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Agile & Management</h4>
-                <p>SAFe, Scrum, JIRA, Rally, Roadmapping (Miro), User Story Mapping</p>
-            </div>
-            <div class="skill-category">
-                <h4>Full-Stack Tech</h4>
-                <p>Java, Spring Boot, ReactJS, AngularJS, Node.js</p>
-            </div>
-            <div class="skill-category">
-                <h4>Cloud & DevOps</h4>
-                <p>AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins, OpenShift</p>
+            <div class="work-item">
+                <div class="work-meta">
+                    <h3>Software Engineer</h3>
+                    <span class="company">Valtech</span>
+                    <span class="date">2019 — 2021</span>
+                </div>
+                <div class="work-content">
+                    <p>Modernized Aircraft Maintenance systems (STC) by migrating from Java 6 to Java 8 and Spring architecture.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <h3>Get In Touch</h3>
-        <p>Email: dukkasrikanth23@gmail.com | Phone: 618-803-2919</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/srikanth-dukka">LinkedIn</a>
-            <a href="#">GitHub</a>
+    <section id="skills" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Technical arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>SAFe / Agile / Scrum</li>
+                        <li>Backlog Refinement</li>
+                        <li>User Story Mapping</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Development</h4>
+                    <ul>
+                        <li>Java / Spring Boot</li>
+                        <li>React / Angular</li>
+                        <li>REST & SOAP APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud & Ops</h4>
+                    <ul>
+                        <li>AWS (EC2, S3, Lambda)</li>
+                        <li>Kubernetes / Docker</li>
+                        <li>Jenkins CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Srikanth Dukka | 618-803-2919</p>
         </div>
     </footer>
+
 </body>
 </html>

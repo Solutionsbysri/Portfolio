@@ -2,8 +2,8 @@
     --bg: #0f172a;
     --card-bg: rgba(255, 255, 255, 0.03);
     --accent: #38bdf8;
-    --text-main: #f8fafc;
-    --text-dim: #94a3b8;
+    --text-main: #1e293b;
+    --text-dim: #475569;
     --gradient: linear-gradient(90deg, #38bdf8, #818cf8);
 }
 
@@ -167,15 +167,11 @@ body {
 }
 
 .glass-card {
-    background: var(--card-bg);
-    border: 1px solid rgba(255,255,255,0.05);
-    padding: 0;             /* Remove padding to let image flush to edges */
-    border-radius: 24px;
-    overflow: hidden;       /* Clips the image to the border radius */
-    transition: 0.4s;
-    text-align: left;       /* Left-aligned text looks better in vertical stacks */
+    display: block !important;
+    min-height: 100px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.7); /* Lightens card for readability */
 }
-
 /* Add an image area to the top of the card */
 .card-image {
     width: 100%;
@@ -210,10 +206,9 @@ section {
 }
 /* The initial state of the cards */
 .reveal {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 1.2s ease-out; /* Smooth, slow transition */
-    visibility: visible;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
 }
 
 /* The state when the card becomes visible */
@@ -222,8 +217,6 @@ section {
     transform: translateY(0);
     visibility: visible;
 }
-.reveal:nth-child(2) { transition-delay: 0.2s; }
-.reveal:nth-child(3) { transition-delay: 0.4s; }
 .company {
     color: var(--accent);
     font-weight: 600;

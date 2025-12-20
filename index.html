@@ -6,12 +6,10 @@
     <title>Srikanth Dukka | AI-Empowered Product Leader</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         :root {
-            /* Light Mode Palette */
             --bg: #f8fafc;
             --nav-bg: #ffffff;
             --card-bg: #ffffff;
@@ -26,7 +24,6 @@
         }
 
         body.dark-mode {
-            /* Dark Mode Palette */
             --bg: #0f172a;
             --nav-bg: #1e293b;
             --card-bg: #1e293b;
@@ -50,7 +47,6 @@
 
         .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
-        /* Navigation */
         nav {
             background: var(--nav-bg);
             padding: 1.2rem 0;
@@ -73,7 +69,6 @@
             font-size: 1rem; color: var(--text-primary);
         }
 
-        /* Hero Section */
         .hero { background: var(--hero-bg); padding: 80px 0; border-bottom: 1px solid var(--border); }
         .badge { 
             background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); 
@@ -89,10 +84,10 @@
         .btn-outline { border: 1px solid var(--border); color: var(--text-primary); padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: var(--transition); }
         .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.2); }
 
-        /* Experience & Skills Grid */
         .section-header { margin: 60px 0 30px; font-size: 1.5rem; font-weight: 700; }
         
-        .grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .sub-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
         
         .card { 
             background: var(--card-bg); 
@@ -107,7 +102,7 @@
         .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
         .company { color: var(--accent-blue); font-weight: 700; font-size: 0.95rem; display: block; }
         .date { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; display: block; }
-        .card p { font-size: 0.9rem; color: var(--text-secondary); }
+        .card p { font-size: 0.95rem; color: var(--text-secondary); }
 
         .skill-list { list-style: none; margin-top: 1rem; }
         .skill-list li { font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
@@ -116,7 +111,7 @@
         footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem; }
 
         @media (max-width: 900px) {
-            .grid { grid-template-columns: 1fr; }
+            .grid, .sub-grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2.5rem; }
             .nav-right ul { display: none; }
         }
@@ -139,9 +134,9 @@
 
     <header class="hero">
         <div class="container" data-aos="fade-up">
-            <span class="badge">Certified SAFe® AI-Empowered Product Owner/Product Manager</span>
+            <span class="badge">Certified SAFe® AI-Empowered PO/PM</span>
             <h1>Bridging the gap between <br><span>Code and Strategy.</span></h1>
-            <p>Senior Software Consultant with 7+ years track record in Aviation, Payroll, and Finance. Expert in full SDLC, CI/CD, and Agile leadership.</p>
+            <p>Senior Software Consultant with a 7+ year track record. Specialist in modernizing enterprise architecture and leading Agile delivery teams.</p>
             <div class="btn-group">
                 <a href="mailto:dukkasrikanth23@gmail.com" class="btn-primary">Contact Me</a>
                 <a href="resume.pdf" class="btn-outline" download="Srikanth_Dukka_Resume.pdf">Download Resume</a>
@@ -150,58 +145,73 @@
     </header>
 
     <main class="container">
-        <h2 class="section-header" data-aos="fade-right">Professional Experience</h2>
+        <h2 class="section-header" id="experience" data-aos="fade-right">Professional Experience</h2>
+        
         <div class="grid">
             <div class="card" data-aos="fade-up">
                 <span class="company">Paychex INC</span>
                 <h3>Senior Software Consultant</h3>
                 <span class="date">April 2021 — Present</span>
-                <p>Leading the digital transformation of payroll systems. Translating high-level epics into actionable stories for a development team of 8. Redesigned critical UIs in Figma to improve user experience.</p>
+                <p>Driving digital transformation of payroll systems. Translating epics into actionable stories for 8 developers. Modernized legacy security to Kong Services and redesigned critical UIs using Figma to optimize user workflows.</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Highlights</h3>
+                <ul class="skill-list">
+                    <li>Product Strategy</li>
+                    <li>Microservices Design</li>
+                    <li>OpenShift & Docker</li>
+                    <li>Agile Coaching</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card" data-aos="fade-up">
+                <span class="company">Valtech</span>
+                <h3>Software Engineer</h3>
+                <span class="date">June 2019 — Feb 2021</span>
+                <p>Architected modernization strategies for aircraft maintenance systems. Migrated core platforms from Java 6 to Spring 8 and introduced TDD practices to ensure 90%+ code coverage on critical modules.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Highlights</h3>
+                <ul class="skill-list">
+                    <li>Legacy Migration</li>
+                    <li>JUnit & Selenium</li>
+                    <li>Angular & React</li>
+                    <li>Performance Tuning</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-header" id="skills" data-aos="fade-right">Technical Arsenal</h2>
+        <div class="sub-grid">
+            <div class="card" data-aos="fade-up">
                 <h3>Leadership</h3>
                 <ul class="skill-list">
                     <li>SAFe / Agile / Scrum</li>
                     <li>Backlog Refinement</li>
                     <li>User Story Mapping</li>
-                    <li>Stakeholder Mgmt</li>
+                    <li>Stakeholder Relations</li>
                 </ul>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Impact</h3>
-                <ul class="skill-list">
-                    <li>CI/CD Automation</li>
-                    <li>UI/UX Redesign</li>
-                    <li>API Modernization</li>
-                    <li>Security Upgrades</li>
-                </ul>
-            </div>
-        </div>
-
-        <h2 class="section-header" data-aos="fade-right">Technical Arsenal</h2>
-        <div class="grid">
-            <div class="card" data-aos="fade-up">
-                <span class="company">Valtech</span>
-                <h3>Software Engineer</h3>
-                <span class="date">2019 — 2021</span>
-                <p>Modernized Aircraft Maintenance systems (STC). Migrated legacy Java 6 systems to Java 8 and Spring architecture. Implemented automated testing with JUnit and Selenium.</p>
-            </div>
+            
             <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Development</h3>
                 <ul class="skill-list">
-                    <li>Java / Spring Boot</li>
-                    <li>React / Angular</li>
+                    <li>Java / Spring / Hibernate</li>
+                    <li>React / Angular / JS</li>
                     <li>REST & SOAP APIs</li>
-                    <li>MySQL / MongoDB</li>
+                    <li>AWS / Kubernetes</li>
                 </ul>
             </div>
+
             <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Cloud & Ops</h3>
+                <h3>Impact</h3>
                 <ul class="skill-list">
-                    <li>AWS (EC2, S3, Lambda)</li>
-                    <li>Kubernetes / Docker</li>
-                    <li>Jenkins CI/CD</li>
-                    <li>OpenShift</li>
+                    <li>4+ UI/UX Redesigns</li>
+                    <li>Security Hardening</li>
+                    <li>CI/CD Automation</li>
+                    <li>Incident Management</li>
                 </ul>
             </div>
         </div>
@@ -209,20 +219,17 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Srikanth Dukka | 618-803-2919 | LinkedIn: srikanth-dukka</p>
+            <p>© 2025 Srikanth Dukka | 618-803-2919 | linkedin.com/in/srikanth-dukka</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Initialize Animations
         AOS.init({ duration: 800, once: true });
 
-        // Dark Mode Logic
         const themeBtn = document.getElementById('theme-btn');
         const body = document.body;
 
-        // Check local storage for preference
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             themeBtn.textContent = '☀️';

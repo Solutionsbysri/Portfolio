@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valtech Case Study | Srikanth Dukka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent-blue: #2563eb;
+            --border: #e2e8f0;
+        }
 
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --card-bg: #1e293b;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --border: #334155;
+            }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+
+        header { margin-bottom: 3rem; }
+        .back-link { text-decoration: none; color: var(--accent-blue); font-weight: 600; font-size: 0.9rem; }
+        
+        h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; letter-spacing: -1px; }
+        .metadata { color: var(--text-secondary); font-size: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem; margin-bottom: 2rem; }
+
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; color: var(--accent-blue); }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+        .challenge-box {
+            background: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .tag {
+            background: var(--border);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .result-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .result-card strong { display: block; font-size: 1.5rem; color: var(--accent-blue); }
+
+        footer { margin-top: 5rem; text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <article class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Portfolio</a>
+            <h1>Aviation Legacy Modernization</h1>
+            <div class="metadata">Valtech • Software Engineer • 2019—2021</div>
+        </header>
+
+        <section>
+            <h2>The Challenge</h2>
+            <div class="challenge-box">
+                The Aircraft Maintenance Steering (STC) systems were running on deprecated Java 6 frameworks, creating significant security risks and preventing the integration of modern Angular-based frontends.
+            </div>
+            <p>The primary goal was to modernize the core backend while ensuring zero downtime for critical aviation maintenance operations. This required a meticulous migration strategy that wouldn't disrupt global maintenance schedules.</p>
+        </section>
+
+        
+
+        <section>
+            <h2>The Solution</h2>
+            <p>I spearheaded the migration from <strong>Java 6 to Java 8</strong> and reimplemented core services using <strong>Spring Boot</strong>. I also led the transition from legacy <strong>OpenLaszlo</strong> frontends to modern <strong>Angular</strong> frameworks, significantly improving the UI responsiveness for maintenance engineers.</p>
+            
+            <div class="tech-stack">
+                <span class="tag">Java 8</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">TDD (JUnit/Selenium)</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Impact</h2>
+            <div class="result-grid">
+                <div class="result-card">
+                    <strong>90%</strong>
+                    Test Coverage (TDD)
+                </div>
+                <div class="result-card">
+                    <strong>40%</strong>
+                    Improvement in UI Load Speed
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Srikanth Dukka
+        </footer>
+    </article>
+
+</body>
+</html>

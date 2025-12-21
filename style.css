@@ -107,6 +107,18 @@ nav ul li a { text-decoration: none; color: var(--text-main); font-weight: 500; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
+/* Update this specific selector in your <style> tag */
+.sub-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; /* Forces 3 even columns */
+    gap: 1.5rem; 
+    margin-bottom: 3rem; 
+}
+
+/* Ensure cards take full height so the row looks even */
+.sub-grid .card {
+    height: 100%;
+}
 .skill-card {
     background: white;
     padding: 2rem;

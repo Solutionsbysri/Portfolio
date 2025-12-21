@@ -2,15 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Paychex Experience Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | Srikanth Dukka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; padding: 50px; text-align: center; color: #1e293b; background: #f8fafc; }
-        .back-btn { text-decoration: none; color: #2563eb; font-weight: bold; }
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent-blue: #2563eb;
+            --border: #e2e8f0;
+        }
+
+        /* Support for Dark Mode if the user's system is set to dark */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --card-bg: #1e293b;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --border: #334155;
+            }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+
+        header { margin-bottom: 3rem; }
+        .back-link { text-decoration: none; color: var(--accent-blue); font-weight: 600; font-size: 0.9rem; }
+        
+        h1 { font-size: 2.5rem; margin: 1rem 0 0.5rem; letter-spacing: -1px; }
+        .metadata { color: var(--text-secondary); font-size: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem; margin-bottom: 2rem; }
+
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; color: var(--accent-blue); }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+        .challenge-box {
+            background: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .tag {
+            background: var(--border);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .result-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .result-card strong { display: block; font-size: 1.5rem; color: var(--accent-blue); }
+
+        footer { margin-top: 5rem; text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <h1>Paychex INC - Project Details</h1>
-    <p>Detailed project descriptions and achievements for this role go here...</p>
-    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    <article class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Portfolio</a>
+            <h1>Modernizing Payroll Infrastructure</h1>
+            <div class="metadata">Paychex INC • Senior Software Consultant • 2021—Present</div>
+        </header>
+
+        <section>
+            <h2>The Challenge</h2>
+            <div class="challenge-box">
+                The legacy system faced 20% latency issues during peak processing windows and lacked the security protocols required for modern API integrations.
+            </div>
+            <p>As the Product Lead, I had to bridge the communication gap between stakeholders requesting "faster features" and the engineering team dealing with mounting technical debt.</p>
+        </section>
+
+        
+
+        <section>
+            <h2>The Solution</h2>
+            <p>We implemented a two-phased approach. First, we migrated critical security layers to <strong>Kong Gateway</strong>. Second, we leveraged <strong>Figma</strong> to build a user-centric UI that reduced customer support tickets by 15%.</p>
+            
+            <div class="tech-stack">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Kong API</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Figma</span>
+                <span class="tag">OpenShift</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Impact</h2>
+            <div class="result-grid">
+                <div class="result-card">
+                    <strong>15%</strong>
+                    Reduction in Support Tickets
+                </div>
+                <div class="result-card">
+                    <strong>99.9%</strong>
+                    System Uptime Post-Migration
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Srikanth Dukka
+        </footer>
+    </article>
+
 </body>
 </html>

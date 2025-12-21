@@ -59,25 +59,19 @@
             font-size: 1rem; color: var(--text-primary);
         }
 
-        /* Case Study Content */
+        /* Case Study Header */
         .case-header { padding: 60px 0 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--accent-blue); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
         
-        h1 { font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
-        .meta { color: var(--text-secondary); font-weight: 500; }
+        h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; letter-spacing: -1px; }
+        .meta { color: var(--text-secondary); font-weight: 500; font-size: 1.1rem; }
 
+        /* Content Sections */
         .content-section { margin-bottom: 50px; }
         h2 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-blue); font-weight: 700; }
         p { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 20px; }
 
-        .highlight-box {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 30px 0;
-
-            .challenge-box {
+        .challenge-box {
             background: rgba(37, 99, 235, 0.05);
             border-left: 4px solid var(--accent-blue);
             padding: 2rem;
@@ -86,14 +80,14 @@
             font-style: italic;
             color: var(--text-primary);
         }
-        }
 
         .tag-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
-        .tag { background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; }
+        .tag { background: var(--border); color: var(--text-primary); padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
 
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-        .stat-card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; border-radius: 12px; text-align: center; }
-        .stat-card strong { font-size: 2rem; color: var(--accent-orange); display: block; }
+        .stat-card { background: var(--card-bg); border: 1px solid var(--border); padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .stat-card strong { font-size: 2.5rem; color: var(--accent-orange); display: block; margin-bottom: 5px; }
+        .stat-card span { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; }
 
         footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem; margin-top: 60px; }
     </style>
@@ -118,19 +112,17 @@
     <main class="container">
         <section class="content-section" data-aos="fade-up">
             <h2>The Challenge</h2>
-            <div class="challenge-box">  
-            <p>The System Time Check (STC) systems were operating on deprecated Java 6 and Open Lazlo UIframeworks. This created significant security vulnerabilities and prevented the implementation of modern, responsive frontend components required by engineers in the field.</p>
+            <div class="challenge-box">
+                "The System Time Check (STC) systems were operating on deprecated Java 6 and OpenLaszlo UI frameworks. This created significant technical debt, impacting the ground crew's ability to work effectively and preventing the use of modern Angular components."
             </div>
-                <div class="highlight-box">
-                <strong>Core Problem:</strong> High technical debt was limiting the ability to integrate modern Angular frameworks and impcting the ground crew to work effectively .
-            </div>
+            <p>The core objective was to modernize the technical foundation to eliminate security vulnerabilities while simultaneously improving the workflow for aviation maintenance engineers in the field.</p>
         </section>
 
         
 
         <section class="content-section" data-aos="fade-up">
             <h2>The Transformation</h2>
-            <p>I spearheaded the migration of the backend architecture to <strong>Java 8</strong> and <strong>Spring Boot</strong>. This shift allowed us to introduce automated build processes via Jenkins and implement a robust testing suite.</p>
+            <p>I spearheaded the migration of the backend architecture to <strong>Java 8</strong> and <strong>Spring Boot</strong>. This shift allowed us to introduce automated build processes via Jenkins and implement a robust testing suite using TDD principles.</p>
             <div class="tag-container">
                 <span class="tag">Java 8</span>
                 <span class="tag">Spring Boot</span>
@@ -145,11 +137,11 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <strong>90%</strong>
-                    Test Coverage Achievement
+                    <span>Test Coverage Achievement</span>
                 </div>
                 <div class="stat-card">
                     <strong>40%</strong>
-                    Reduction in Production Incidents
+                    <span>Reduction in Production Incidents</span>
                 </div>
             </div>
         </section>
@@ -168,7 +160,6 @@
         const themeBtn = document.getElementById('theme-btn');
         const body = document.body;
 
-        // Ensure theme matches home page selection
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             themeBtn.textContent = '☀️';

@@ -168,3 +168,13 @@ body.dark-mode .btn-white {
 body.dark-mode footer {
     background: #0f172a;
 }
+.cert-card {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-orange);
+    background: rgba(245, 158, 11, 0.02);
+}
